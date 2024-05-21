@@ -30,7 +30,7 @@ def run_setup(try_c: bool = True):
     with open(os.path.join(project_dir, 'README.md'), encoding='utf-8') as read_me:
         long_desc = read_me.read()
 
-    version = 'development'
+    version = '0.7.9.dev0'
     if os.path.isfile('.dev_version'):
         with open(os.path.join(project_dir, '.dev_version'), encoding='utf-8') as version_file:
             version = version_file.readline()
